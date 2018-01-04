@@ -11,6 +11,7 @@ VVVV 64bit add-on pack: https://vvvv.org/downloads
 
 VVVV 64bit DX11 add-on pack: https://vvvv.org/contribution/directx11-nodes 
 
+VLC Video player (64bit > version 2.0) https://www.videolan.org/
 
 TIPS
 =========
