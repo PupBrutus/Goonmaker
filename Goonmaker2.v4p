@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.106.dtd" >
-   <PATCH nodename="C:\Users\brutus\Desktop\Active Projects\___Programming\Goonmaker\Goonmaker2.v4p" systemname="Goonmaker2" filename="C:\Users\brutus\Desktop\Active Projects\___Programming\Goonmaker\Goonmaker2.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="11235" top="1365" width="19080" height="13020">
+   <PATCH nodename="C:\Users\brutus\Desktop\Active Projects\___Programming\Goonmaker_pub\Goonmaker2.v4p" systemname="Goonmaker2" filename="C:\Users\brutus\Desktop\Active Projects\___Programming\Goonmaker\Goonmaker2.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="8295" top="2280" width="19080" height="13020">
    </BOUNDS>
    <NODE systemname="GM2_DX11_Video" filename="GM2_DX11_Video.v4p" nodename="C:\Users\brutus\Desktop\Active Projects\___Programming\Goonmaker\GM2_DX11_Video.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="735" top="2295" width="100" height="100">
@@ -51,7 +51,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="945" top="9030" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="435" top="2265" width="13815" height="12120">
+   <BOUNDS type="Window" left="-480" top="1710" width="13815" height="12120">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -86,26 +86,6 @@
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
-   <BOUNDS type="Node" left="555" top="1530" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="555" top="1530" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Play">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Play">
-   </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="7">
    <BOUNDS type="Node" left="1020" top="1035" width="100" height="100">
    </BOUNDS>
@@ -155,7 +135,7 @@
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|D:\Video Feeds\Inuse|">
+   <PIN pinname="Input String" slicecount="1" values="|D:\Video Feeds\Inuse\Twink Videos|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="VideoDir">
    </PIN>
@@ -197,7 +177,7 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Cycles">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="5">
+   <PIN pinname="Y Input Value" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -457,8 +437,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="17" dstpinname="Play">
    </LINK>
@@ -905,7 +883,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12285" top="9315" width="6000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="3285" top="1365" width="27045" height="14655">
+   <BOUNDS type="Window" left="-13995" top="9195" width="27045" height="14655">
    </BOUNDS>
    <PIN pinname="Translate" slicecount="1" values="5.4774">
    </PIN>
@@ -982,8 +960,6 @@
    <PIN pinname="Time" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="91" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Play">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="137">
    <BOUNDS type="Node" left="11940" top="5655" width="100" height="100">
    </BOUNDS>
@@ -1177,11 +1153,13 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="4">
+   <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Input 3" visible="1">
    </PIN>
    <PIN pinname="Input 4" visible="1">
+   </PIN>
+   <PIN pinname="Input 5" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="137" srcpinname="Y Output Value" dstnodeid="150" dstpinname="Input 1">
@@ -1255,7 +1233,7 @@
    </BOUNDS>
    <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Key Match" slicecount="1" values="|NumPad1, NumPad2, NumPad3, NumPad4, NumPad5, NumPad6, NumPad7, NumPad8, NumPad9, NumPad0, Add,Home|">
+   <PIN pinname="Key Match" slicecount="1" values="|NumPad1, NumPad2, NumPad3, NumPad4, NumPad5, NumPad6, NumPad7, NumPad8, NumPad9, NumPad0, Add,Home,Insert|">
    </PIN>
    <PIN pinname="Key Mode" slicecount="1" values="RepeatedEvent">
    </PIN>
@@ -1283,6 +1261,8 @@
    </PIN>
    <PIN pinname="Home" visible="1">
    </PIN>
+   <PIN pinname="Insert" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="163">
    <BOUNDS type="Node" left="14340" top="735" width="100" height="100">
@@ -1295,9 +1275,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Enable Hotkeys|">
    </PIN>
@@ -1309,7 +1289,7 @@
    <LINK srcnodeid="161" srcpinname="NumPad1" dstnodeid="0" dstpinname="HardNext">
    </LINK>
    <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="166">
-   <BOUNDS type="Node" left="3105" top="7170" width="100" height="100">
+   <BOUNDS type="Node" left="3165" top="7800" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -1329,7 +1309,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="165">
-   <BOUNDS type="Node" left="3435" top="6525" width="100" height="100">
+   <BOUNDS type="Node" left="3495" top="7155" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -1366,6 +1346,8 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Up" visible="1">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="Clamp">
    </PIN>
    </NODE>
    <LINK srcnodeid="161" srcpinname="NumPad4" dstnodeid="170" dstpinname="Down">
@@ -1413,6 +1395,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="176" srcpinname="Output" dstnodeid="167" dstpinname="Switch">
    </LINK>
@@ -1421,11 +1405,13 @@
    <LINK srcnodeid="158" srcpinname="Y Output Value" dstnodeid="165" dstpinname="TranslateY">
    </LINK>
    <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="177">
-   <BOUNDS type="Node" left="16350" top="2640" width="100" height="100">
+   <BOUNDS type="Node" left="16560" top="3135" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="177" srcpinname="Output" dstnodeid="2" dstpinname="Fullscreen">
@@ -1465,7 +1451,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="13005" top="5490" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="70">
+   <PIN pinname="Y Input Value" slicecount="1" values="69.95">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1514,6 +1500,8 @@
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="161" srcpinname="NumPad8" dstnodeid="183" dstpinname="Input">
@@ -1651,6 +1639,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="161" srcpinname="NumPad3" dstnodeid="201" dstpinname="Input">
    </LINK>
@@ -1735,9 +1725,9 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="216">
    <BOUNDS type="Node" left="375" top="2730" width="345" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="375" top="2730" width="4305" height="3780">
+   <BOUNDS type="Box" left="375" top="2730" width="4305" height="3915">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Current Hotkeys&cr;&lf;Numpad1 - Skip to new video&cr;&lf;Numpad2 - Skip to new time in current video&cr;&lf;&cr;&lf;Numpad3 - Cycles magnification options&cr;&lf;Numpad4 - Slow playback (33%)&cr;&lf;Numpad5 - Normalize playback speed (100%)&cr;&lf;Numpad6 - Fastforward playback (250%)&cr;&lf;&cr;&lf;Numpad7 - Allows auto skipping to new video&cr;&lf;Numpad8 - Allows auto skipping inside video&cr;&lf;Numpad9 - Allows beat-sensitive internal skipping&cr;&lf;&cr;&lf;Numpad0 - Reset poppers system (helpful if errored)&cr;&lf;Numpad+ - Trigger poppers hit&cr;&lf;&cr;&lf;HOME key - Toggles full-screen|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Current Hotkeys&cr;&lf;Numpad1 - Skip to new video&cr;&lf;Numpad2 - Skip to new time in current video&cr;&lf;&cr;&lf;Numpad3 - Cycles magnification options&cr;&lf;Numpad4 - Slow playback (33%)&cr;&lf;Numpad5 - Normalize playback speed (100%)&cr;&lf;Numpad6 - Fastforward playback (250%)&cr;&lf;&cr;&lf;Numpad7 - Allows auto skipping to new video&cr;&lf;Numpad8 - Allows auto skipping inside video&cr;&lf;Numpad9 - Allows beat-sensitive internal skipping&cr;&lf;&cr;&lf;Numpad0 - Reset poppers system (helpful if errored)&cr;&lf;Numpad+ - Trigger poppers hit&cr;&lf;&cr;&lf;HOME key - Toggles full-screen&cr;&lf;Insert key - Toggle play/pause|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -2139,7 +2129,7 @@
    <LINK srcnodeid="245" srcpinname="Y Output Value" dstnodeid="247" dstpinname="Input 2">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="248">
-   <BOUNDS type="Node" left="4590" top="3105" width="100" height="100">
+   <BOUNDS type="Node" left="5325" top="3330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -2217,7 +2207,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Only jump everyX seconds|">
    </PIN>
@@ -2297,6 +2287,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="161" srcpinname="NumPad9" dstnodeid="265" dstpinname="Input">
    </LINK>
@@ -2304,4 +2296,116 @@
    </LINK>
    <LINK srcnodeid="265" srcpinname="Output" dstnodeid="264" dstpinname="Switch">
    </LINK>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="266">
+   <BOUNDS type="Node" left="16860" top="2430" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="267">
+   <BOUNDS type="Node" left="1035" top="1575" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1035" top="1575" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Play/Pause">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="266" srcpinname="Output" dstnodeid="42" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="269">
+   <BOUNDS type="Node" left="17130" top="1830" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="161" srcpinname="Insert" dstnodeid="269" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="269" srcpinname="Output" dstnodeid="266" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="267" srcpinname="Y Output Value" dstnodeid="269" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="266" srcpinname="Output" dstnodeid="0" dstpinname="Play">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="270">
+   <BOUNDS type="Node" left="17685" top="3435" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   <PIN pinname="Simulate" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="270" srcpinname="Bang" dstnodeid="150" dstpinname="Input 5">
+   </LINK>
+   <NODE systemname="OnQuit (VVVV)" nodename="OnQuit (VVVV)" componentmode="Hidden" id="271">
+   <BOUNDS type="Node" left="17670" top="1680" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="271" srcpinname="Bang" dstnodeid="266" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="271" srcpinname="Bang" dstnodeid="270" dstpinname="Simulate">
+   </LINK>
+   <LINK srcnodeid="270" srcpinname="Bang" dstnodeid="177" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="270" srcpinname="Bang" dstnodeid="265" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="270" srcpinname="Bang" dstnodeid="201" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="270" srcpinname="Bang" dstnodeid="183" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="270" srcpinname="Bang" dstnodeid="176" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="272">
+   <BOUNDS type="Node" left="7455" top="4560" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7455" top="4560" width="795" height="240">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="273">
+   <BOUNDS type="Node" left="12375" top="8970" width="810" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12375" top="8970" width="810" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|single hit|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="274">
+   <BOUNDS type="Node" left="14175" top="9075" width="555" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14175" top="9075" width="555" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|3 hits|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

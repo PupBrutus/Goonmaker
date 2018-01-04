@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.106.dtd" >
-   <PATCH nodename="C:\Users\brutus\Desktop\Active Projects\___Programming\Goonmaker\GM2_DX11_Video.v4p" systemname="GM2_DX11_Video" filename="C:\Users\brutus\Desktop\Active Projects\___Programming\Goonmaker\GM2_DX11_Video.v4p" scrollx="2745" scrolly="0">
+   <PATCH nodename="C:\Users\brutus\Desktop\Active Projects\___Programming\Goonmaker\GM2_DX11_Video.v4p" systemname="GM2_DX11_Video" filename="C:\Users\brutus\Desktop\Active Projects\___Programming\Goonmaker\GM2_DX11_Video.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="5415" top="2775" width="16890" height="15855">
    </BOUNDS>
    <NODE systemname="FileStream (DX11.Texture Vlc)" filename="%VVVV%\packs\dx11\nodes\plugins\vlc\VVVV.DX11.Nodes.Vlc.dll" nodename="FileStream (DX11.Texture Vlc)" componentmode="Hidden" id="0">
@@ -163,7 +163,7 @@
    <LINK srcnodeid="6" srcpinname="Filenames" dstnodeid="10" dstpinname="Input">
    </LINK>
    <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="3675" top="2730" width="100" height="100">
+   <BOUNDS type="Node" left="3690" top="2910" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
