@@ -1,13 +1,17 @@
 # Goonmaker
+
 Ground-Up rebuild of Fapinator 9000 (https://github.com/PupBrutus/Fapinator9000) code based around popper trainer/hypno/gooning emulation
-=========
+
+
 Requirements: 
 =========
 VVVV 64bit atleast v34.106 https://vvvv.org/downloads
+
 VVVV 64bit add-on pack: https://vvvv.org/downloads
+
 VVVV 64bit DX11 add-on pack: https://vvvv.org/contribution/directx11-nodes 
 
-=========
+
 TIPS
 =========
 
@@ -19,7 +23,7 @@ I do re-encode most of my own videos using either Adobe Media Encoder or https:/
 
 You will need to specify your audio-source if you intend to use the beat-detection - here is a quick link explaining how to activate the stereo mix option: https://vvvv.org/documentation/accessing-stereo-mix 
 
-=========
+
 HOTKEYS
 =========
 
@@ -47,9 +51,11 @@ Insert key - Toggle play/pause
 
 By default the video skipping is all disabled so use the hot-keys to enable the switching there or use manual video skipping hot-keys
 
-=========
+
 Poppers system
 =========
+Poppers can be dangerous - be smart and play safe. I cannot be responsible for the mis-use of this program. 
+
 The poppers system is still a beta feature, it will sometimes start to loop (offering hit after hit) pressing the num-pad 0 key will reset the system and it should return to functioning normally. There are three main options for the popper system, min time between hits, max time between hits and the % of single hits. Setting it as 60 min, 90 max and 70% single hit will mean that it will wait a minimum of 60 seconds and a maximum of 90 seconds before offering a hit (at a random time between them), and it will be a 70% chance of being a single hit. 
 
 Currently the poppers hits are based on the Timeliner functions, which doesn’t allow me to programmably specify the number of hits, instead it functions as a playback of recorded values over time. If you need to adjust any of the timings just right-click the Timeliner function and you can drag around the keyframes to make it work (but it is a bit particular so it can break easily). I plan to add additional hit sequences in later. https://vvvv.org/documentation/timeliner-(animation)
