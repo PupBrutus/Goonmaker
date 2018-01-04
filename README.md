@@ -1,5 +1,5 @@
 # Goonmaker
-Ground-Up rebuild of Fapinator 9000 code based around popper trainer/hypno/gooning emulation
+Ground-Up rebuild of Fapinator 9000 (https://github.com/PupBrutus/Fapinator9000) code based around popper trainer/hypno/gooning emulation
 
 Requirements: 
 VVVV 64bit atleast v34.106 https://vvvv.org/downloads
