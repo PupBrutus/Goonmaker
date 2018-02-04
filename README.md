@@ -38,16 +38,14 @@ HOTKEYS
 Be sure to enable hot-keys for primary in-session controls (disabled by default)
 
 Current Hotkeys
-Numpad1 - Jumps to new BG porn file
-Numpad2 - Jumps to new time in current BG porn file
-Numpad3 - Removes UI
-
-Numpad7 - Toggles auto skipping to new video
-Numpad8 - Toggles timer based skipps  BG porn
-Numpad9 - Toggles beat-sensitive skips inside BG porn
-
-HOME key - Toggles full-screen
-Insert key - Toggle play/pause
+| Numpad1 | Jumps to new BG porn file |
+| Numpad2 | Jumps to new time in current BG porn file |
+| Numpad3 | Removes UI |
+| Numpad7 | Toggles auto skipping to new video |
+| Numpad8 | Toggles timer based skipps  BG porn |
+| Numpad9 | Toggles beat-sensitive skips inside BG porn |
+| HOME key | Toggles full-screen |
+| Insert key | Toggle play/pause |
 
 By default the video skipping is all disabled so use the hot-keys or toggles to enable the switching there or use manual video skipping hot-keys
 
