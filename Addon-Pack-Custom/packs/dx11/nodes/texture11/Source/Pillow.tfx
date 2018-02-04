@@ -1,0 +1,50 @@
+//@author: 
+//@help: 
+//@tags: source
+//@credits:
+
+float2 R:TARGETSIZE;
+
+cbuffer controls:register(b0){
+
+	float4x4 tTex <string uiname="Transform";>;
+	float4 Color1 <bool color=true;> = {0,0,0,1};
+	float4 Color2 <bool color=true;> = {1,1,1,1};
+	float2 Gamma=-4;
+	float2 ClampBody <float uimin=0.0; float uimax=1.0;> = {0.0,0.0};
+	float Dithering <bool visible=false;float uimin=0.0; float uimax=1.0;> = 1; 
+	float DitherSeed <bool visible=false;> =0;
+};
+
+#include "Noise.fxh"
+
+float4 _dither(float4 c,float2 x,float RandomSeed=0,float Levels=255,float AddNoise=1){
+	float4 nois=_dnoise4(x,RandomSeed);
+	c*=Levels;
+	c+=(nois-.5)*AddNoise;
+	c/=Levels;
+	return c;
+}
+
+float4 pLINEAR(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_TARGET{
+	float4 c=0;
+	float2 x0=mul(float4((x.xy*2-1)*float2(1,-1),0,1),tTex).xy*0.5*float2(1,-1)+0.5;
+	//float fade=pow(saturate(1-2*abs(x0.x-.5)),pow(2,Gamma.x))*pow(saturate(1-2*abs(x0.y-.5)),pow(2,Gamma.y));
+	
+	//fade=sign(fade)*pow(abs(fade),1./pow(2,Gamma.x));
+	//float fade=max(pow(saturate(1-2*abs(x0.x-.5)),pow(2,Gamma.x)),pow(saturate(1-2*abs(x0.y-.5)),pow(2,Gamma.y)));
+	
+	float fade=	pow(smoothstep(0,1-ClampBody.x*.9999,1-2*abs(x0.x-.5)),pow(2,Gamma.x))*
+				pow(smoothstep(0,1-ClampBody.y*.9999,1-2*abs(x0.y-.5)),pow(2,Gamma.y));
+	//fade*=pow(.5,pow(max(0,1-fade),.25));
+	//fade=sign(fade)*pow(abs(fade),Gamma);
+
+	c=lerp(Color1,Color2,fade);
+	if(Dithering>0)c=_dither(c,x*R,DitherSeed,256,Dithering);
+    return c;
+}
+
+technique10 Pillow{pass P1{SetPixelShader(CompileShader(ps_4_0,pLINEAR()));}}
+
+
+
